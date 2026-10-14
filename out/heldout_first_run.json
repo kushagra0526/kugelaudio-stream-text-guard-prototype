@@ -1,0 +1,830 @@
+{
+ "split": "heldout",
+ "turns": 400,
+ "tokens": 28947,
+ "families": {
+  "l:ACR": {
+   "passthrough": [
+    67,
+    67
+   ],
+   "per_chunk": [
+    62,
+    67
+   ],
+   "guard": [
+    38,
+    67
+   ]
+  },
+  "l:DATE": {
+   "passthrough": [
+    80,
+    80
+   ],
+   "per_chunk": [
+    80,
+    80
+   ],
+   "guard": [
+    80,
+    80
+   ]
+  },
+  "l:OKBREAK": {
+   "passthrough": [
+    24,
+    24
+   ],
+   "per_chunk": [
+    24,
+    24
+   ],
+   "guard": [
+    24,
+    24
+   ]
+  },
+  "l:OKSPELL": {
+   "passthrough": [
+    20,
+    20
+   ],
+   "per_chunk": [
+    9,
+    20
+   ],
+   "guard": [
+    20,
+    20
+   ]
+  },
+  "l:POSTAL": {
+   "passthrough": [
+    84,
+    84
+   ],
+   "per_chunk": [
+    84,
+    84
+   ],
+   "guard": [
+    21,
+    84
+   ]
+  },
+  "l:PRICE": {
+   "passthrough": [
+    79,
+    79
+   ],
+   "per_chunk": [
+    79,
+    79
+   ],
+   "guard": [
+    79,
+    79
+   ]
+  },
+  "l:QTY": {
+   "passthrough": [
+    66,
+    66
+   ],
+   "per_chunk": [
+    66,
+    66
+   ],
+   "guard": [
+    66,
+    66
+   ]
+  },
+  "l:TERM": {
+   "passthrough": [
+    33,
+    33
+   ],
+   "per_chunk": [
+    26,
+    33
+   ],
+   "guard": [
+    33,
+    33
+   ]
+  },
+  "l:TIME": {
+   "passthrough": [
+    80,
+    80
+   ],
+   "per_chunk": [
+    80,
+    80
+   ],
+   "guard": [
+    80,
+    80
+   ]
+  },
+  "l:UNIT": {
+   "passthrough": [
+    37,
+    37
+   ],
+   "per_chunk": [
+    37,
+    37
+   ],
+   "guard": [
+    37,
+    37
+   ]
+  },
+  "p:ALL_CAPS": {
+   "passthrough": [
+    0,
+    81
+   ],
+   "per_chunk": [
+    0,
+    81
+   ],
+   "guard": [
+    78,
+    81
+   ]
+  },
+  "p:BREAK_BOTH_ATTRS": {
+   "passthrough": [
+    0,
+    21
+   ],
+   "per_chunk": [
+    0,
+    21
+   ],
+   "guard": [
+    21,
+    21
+   ]
+  },
+  "p:BREAK_IN_SPELL": {
+   "passthrough": [
+    0,
+    29
+   ],
+   "per_chunk": [
+    0,
+    29
+   ],
+   "guard": [
+    29,
+    29
+   ]
+  },
+  "p:BREAK_LONG": {
+   "passthrough": [
+    0,
+    85
+   ],
+   "per_chunk": [
+    0,
+    85
+   ],
+   "guard": [
+    85,
+    85
+   ]
+  },
+  "p:EMOJI": {
+   "passthrough": [
+    0,
+    230
+   ],
+   "per_chunk": [
+    230,
+    230
+   ],
+   "guard": [
+    230,
+    230
+   ]
+  },
+  "p:EXCLAIM": {
+   "passthrough": [
+    0,
+    591
+   ],
+   "per_chunk": [
+    591,
+    591
+   ],
+   "guard": [
+    591,
+    591
+   ]
+  },
+  "p:GROUPED_SPLIT": {
+   "passthrough": [
+    0,
+    73
+   ],
+   "per_chunk": [
+    0,
+    73
+   ],
+   "guard": [
+    73,
+    73
+   ]
+  },
+  "p:LANGUAGE": {
+   "passthrough": [
+    0,
+    147
+   ],
+   "per_chunk": [
+    0,
+    147
+   ],
+   "guard": [
+    142,
+    147
+   ]
+  },
+  "p:MARKDOWN": {
+   "passthrough": [
+    0,
+    661
+   ],
+   "per_chunk": [
+    311,
+    661
+   ],
+   "guard": [
+    661,
+    661
+   ]
+  },
+  "p:SPELL_NEEDED": {
+   "passthrough": [
+    0,
+    500
+   ],
+   "per_chunk": [
+    0,
+    500
+   ],
+   "guard": [
+    467,
+    500
+   ]
+  },
+  "p:SPELL_NESTED": {
+   "passthrough": [
+    0,
+    21
+   ],
+   "per_chunk": [
+    0,
+    21
+   ],
+   "guard": [
+    21,
+    21
+   ]
+  },
+  "p:SPELL_PUNCT": {
+   "passthrough": [
+    0,
+    83
+   ],
+   "per_chunk": [
+    0,
+    83
+   ],
+   "guard": [
+    83,
+    83
+   ]
+  },
+  "p:SPELL_SPACE": {
+   "passthrough": [
+    0,
+    35
+   ],
+   "per_chunk": [
+    1,
+    35
+   ],
+   "guard": [
+    35,
+    35
+   ]
+  },
+  "p:SSML_UNSUPPORTED": {
+   "passthrough": [
+    0,
+    164
+   ],
+   "per_chunk": [
+    0,
+    164
+   ],
+   "guard": [
+    164,
+    164
+   ]
+  }
+ },
+ "problems_fixed": {
+  "passthrough": [
+   0,
+   2721
+  ],
+  "per_chunk": [
+   1133,
+   2721
+  ],
+  "guard": [
+   2680,
+   2721
+  ]
+ },
+ "lookalikes_intact": {
+  "passthrough": [
+   570,
+   570
+  ],
+  "per_chunk": [
+   547,
+   570
+  ],
+  "guard": [
+   478,
+   570
+  ]
+ },
+ "exact_turns": {
+  "passthrough": 0,
+  "per_chunk": 0,
+  "guard": 277
+ },
+ "wrong_language_switches": 5,
+ "delay_tokens": {
+  "guard": {
+   "first_text_p50": 12,
+   "first_text_p95": 24,
+   "hold_p50": 1,
+   "hold_p95": 10,
+   "hold_max": 22
+  },
+  "guard_lang_known": {
+   "first_text_p50": 2,
+   "first_text_p95": 4,
+   "hold_p50": 1,
+   "hold_p95": 9,
+   "hold_max": 22
+  },
+  "sentence_buffer": {
+   "first_text_p50": 18,
+   "first_text_p95": 32,
+   "hold_p50": 9,
+   "hold_p95": 22,
+   "hold_max": 48
+  },
+  "whole_turn": {
+   "first_text_p50": 73,
+   "first_text_p95": 106,
+   "hold_p50": 36,
+   "hold_p95": 83,
+   "hold_max": 118
+  }
+ },
+ "guard_cpu_us_per_token": 96.2,
+ "guard_misses": [
+  {
+   "seed": 100015,
+   "label": "p:LANGUAGE",
+   "lang": "es",
+   "raw": "session=fr turn=es",
+   "out_excerpt": "La devolución es ahora posible en tienda. Trabajamos con IBAN para los pagos. Lo miro <break time=\"500ms\"/><break time=\"500ms\"/><break time=\"500ms\"/><break time=\"500ms\"/><break time=\"500ms\"/> listo, ya estoy."
+  },
+  {
+   "seed": 100019,
+   "label": "l:POSTAL",
+   "lang": "de",
+   "raw": "50667 Köln",
+   "out_excerpt": "Unser Kundenservice sitzt in <spell>50667</spell> Köln. Ihr neuer Code ist <spell>BC0136</spell>. Ihr Flug mit der ISO-9001 ist bestätigt. Bitte senden Sie das Gerät Kostenlos zurück."
+  },
+  {
+   "seed": 100026,
+   "label": "l:ACR",
+   "lang": "fr",
+   "raw": "ADAC",
+   "out_excerpt": "Vous trouverez le formulaire ici.  Nous travaillons avec la adac. Notre service client est basé à <spell>33000</spell> Bordeaux. Merci de préparer :\nPièce d'identité.\nFacture.\nRelevé bancaire."
+  },
+  {
+   "seed": 100026,
+   "label": "l:POSTAL",
+   "lang": "fr",
+   "raw": "33000 Bordeaux",
+   "out_excerpt": "Vous trouverez le formulaire ici.  Nous travaillons avec la adac. Notre service client est basé à <spell>33000</spell> Bordeaux. Merci de préparer :\nPièce d'identité.\nFacture.\nRelevé bancaire."
+  },
+  {
+   "seed": 100028,
+   "label": "l:POSTAL",
+   "lang": "es",
+   "raw": "41001 Sevilla",
+   "out_excerpt": "Ya está todo listo <break time=\"400ms\"/> para su visita. Nuestro servicio al cliente está en <spell>41001</spell> Sevilla.  Tiene 10 facturas pendientes. Lo miro <break time=\"500ms\"/><break time=\"500ms\"/> listo, ya estoy. Trabajamos con IBAN para los pagos. "
+  },
+  {
+   "seed": 100034,
+   "label": "l:ACR",
+   "lang": "es",
+   "raw": "SNCF",
+   "out_excerpt": "El caso <spell>204902</spell> ha pasado a nuestros técnicos. Trabajamos con sncf para los pagos. Escríbanos a <spell>service</spell> guion bajo <spell>fischer@tienda.es</spell> si falta algo.  Nuestra línea 689 78 60 69 atiende las 24 horas."
+  },
+  {
+   "seed": 100034,
+   "label": "p:SPELL_NEEDED",
+   "lang": "es",
+   "raw": "689 78 60 69",
+   "out_excerpt": "El caso <spell>204902</spell> ha pasado a nuestros técnicos. Trabajamos con sncf para los pagos. Escríbanos a <spell>service</spell> guion bajo <spell>fischer@tienda.es</spell> si falta algo.  Nuestra línea 689 78 60 69 atiende las 24 horas."
+  },
+  {
+   "seed": 100037,
+   "label": "l:POSTAL",
+   "lang": "fr",
+   "raw": "33000 Bordeaux",
+   "out_excerpt": "Notre service client est basé à <spell>33000</spell> Bordeaux. Le retour est absolument pris en charge. Le cas <spell>405441</spell> a été transmis à nos techniciens. J'ai ouvert le dossier <spell>2K4Q-8R8G</spell> pour vous. Votre mot de passe unique est <spell group=\"2\">T7L1V9</spell>. Merci de préparer :\nNuméro de série.\nRelevé bancaire.\nFacture."
+  },
+  {
+   "seed": 100038,
+   "label": "l:POSTAL",
+   "lang": "fr",
+   "raw": "13001 Marseille",
+   "out_excerpt": "Notre service client est basé à <spell>13001</spell> Marseille. Bonjour s'il vous plaît Martin, votre colis est arrivé. Un instant <break time=\"200ms\"/> je vérifie votre compte. Je regarde <break time=\"500ms\"/><break time=\"500ms\"/><break time=\"500ms\"/><break time=\"500ms\"/><break time=\"500ms\"/><break time=\"500ms\"/> voilà, je suis de retour. Le retour est gratuit pris en charge. Merci de préparer :\n"
+  },
+  {
+   "seed": 100041,
+   "label": "l:ACR",
+   "lang": "en",
+   "raw": "SNCF",
+   "out_excerpt": "I found 5 open invoices.  The check code is <spell>UP91</spell> <spell>92BK</spell>.  We work together with the sncf. The model with 8K is sold out, sorry."
+  },
+  {
+   "seed": 100043,
+   "label": "l:POSTAL",
+   "lang": "es",
+   "raw": "41001 Sevilla",
+   "out_excerpt": "Nuestro servicio al cliente está en <spell>41001</spell> Sevilla. Buenos días, ustedes López, su paquete ha llegado. El técnico pasa el 03/11/2026 entre las 10:00 y las 12:00. Ya está todo listo <break time=\"400ms\"/> para su visita. He abierto el expediente <spell>DL2834XR</spell> para usted."
+  },
+  {
+   "seed": 100044,
+   "label": "l:POSTAL",
+   "lang": "de",
+   "raw": "20095 Hamburg",
+   "out_excerpt": "Zusammenfassung.\nFall <spell>35764</spell> wurde an die Technik weitergegeben. Ihr Flug mit der ISO-9001 ist bestätigt. Schreiben Sie uns gern an <spell>mia-fischer@kundenservice.de</spell>, falls noch etwas fehlt. Ihr neuer Code ist <spell>MF9895</spell>.  Unser Kundenservice sitzt in <spell>20095</spell> Hamburg."
+  },
+  {
+   "seed": 100046,
+   "label": "l:POSTAL",
+   "lang": "fr",
+   "raw": "13001 Marseille",
+   "out_excerpt": "Résumé.\nBonjour s'il vous plaît Martin, votre colis est arrivé. Notre service client est basé à <spell>13001</spell> Marseille. J'ai ouvert le dossier <spell>SWE-878321</spell> pour vous.  Le cas <spell>275758</spell> a été transmis à nos techniciens. Merci de préparer :\nRelevé bancaire.\nFacture.\nNuméro de série."
+  },
+  {
+   "seed": 100049,
+   "label": "l:ACR",
+   "lang": "es",
+   "raw": "SNCF",
+   "out_excerpt": "Su número de cliente: <spell>67873221</spell>. Tiene 3 facturas pendientes. El caso <spell>514582</spell> ha pasado a nuestros técnicos. Trabajamos con sncf para los pagos."
+  },
+  {
+   "seed": 100050,
+   "label": "l:POSTAL",
+   "lang": "de",
+   "raw": "50667 Köln",
+   "out_excerpt": "Das Modell mit 65W ist leider ausverkauft.  Unsere Hotline <spell>+49</spell> <spell>160</spell> <spell>732</spell> <spell>1281</spell> ist rund um die Uhr erreichbar. Der Prüfcode ist <spell>CM82</spell> <spell>88DY</spell>. Ihr neuer Code ist <spell>TR0111</spell>. Unser Kundenservice sitzt in <spell>50667</spell> Köln."
+  },
+  {
+   "seed": 100052,
+   "label": "l:ACR",
+   "lang": "de",
+   "raw": "SNCF",
+   "out_excerpt": "Unsere Hotline <spell>+42</spell> <spell>160</spell> <spell>586</spell> <spell>3712</spell> ist rund um die Uhr erreichbar. Das Formular finden Sie unser Rückgabeportal.  Wir arbeiten mit dem Sncf zusammen."
+  },
+  {
+   "seed": 100054,
+   "label": "l:ACR",
+   "lang": "fr",
+   "raw": "SNCF",
+   "out_excerpt": "Nous travaillons avec la sncf.  Notez bien le code <spell>RRK-906919</spell>. Votre mot de passe unique est <spell group=\"2\">P6W0Y8</spell>."
+  },
+  {
+   "seed": 100056,
+   "label": "l:ACR",
+   "lang": "fr",
+   "raw": "ADAC",
+   "out_excerpt": "Un instant <break time=\"200ms\"/> je vérifie votre compte.  Je regarde <break time=\"500ms\"/><break time=\"500ms\"/> voilà, je suis de retour.  Nous travaillons avec la adac. Merci de préparer :\nNuméro de série.\nPièce d'identité.\nFacture."
+  },
+  {
+   "seed": 100057,
+   "label": "l:ACR",
+   "lang": "es",
+   "raw": "BBVA",
+   "out_excerpt": "El caso <spell>252650</spell> ha pasado a nuestros técnicos. Trabajamos con bbva para los pagos. El reembolso de 2.499,00 € va a <spell>CH14652105633290148963</spell>."
+  },
+  {
+   "seed": 100060,
+   "label": "p:SPELL_NEEDED",
+   "lang": "fr",
+   "raw": "+33 (0)1 88 68 44 85",
+   "out_excerpt": "J'ai ouvert le dossier <spell>Z69-Q10</spell> pour vous. Notre assistance au +33 (0)1 88 68 44 85 répond jour et nuit. Le remboursement de 19,99 EUR part sur <spell>IT63</spell> <spell>K764</spell> <spell>2215</spell> <spell>0427</spell> <spell>2663</spell> <spell>3677</spell> <spell>169</spell>. Un instant <break time=\"400ms\"/> je vérifie votre compte."
+  },
+  {
+   "seed": 100062,
+   "label": "p:SPELL_NEEDED",
+   "lang": "en",
+   "raw": "(415) 555-9386",
+   "out_excerpt": "Please send the device back free. Say the name like /wut͡ɕ/. I will take care of it today, Mia. The store is on Main for example next to the station. Our hotline (415) 555-9386 is open around the clock. Please have ready:\nPhoto ID.\nInvoice.\nBank statement."
+  },
+  {
+   "seed": 100066,
+   "label": "l:POSTAL",
+   "lang": "de",
+   "raw": "50667 Köln",
+   "out_excerpt": "Ihr neuer Code ist <spell>JH0790</spell>.  Unser Kundenservice sitzt in <spell>50667</spell> Köln.  Notieren Sie sich bitte den Code <spell>HTK-845190</spell>. Das Modell mit 65W ist leider ausverkauft. Bitte halten Sie bereit:\nRechnung.\nSeriennummer.\nKontoauszug."
+  },
+  {
+   "seed": 100074,
+   "label": "p:SPELL_NEEDED",
+   "lang": "es",
+   "raw": "658 07 61 89",
+   "out_excerpt": "Lo miro <break time=\"500ms\"/><break time=\"500ms\"/> listo, ya estoy. Su contraseña de un solo uso es <spell group=\"2\">R8K0L4</spell>. El técnico pasa el 03/11/2026 entre las 16:00 y las 12:00. Buenos días, ustedes López, su paquete ha llegado. Nuestra línea 658 07 61 89 atiende las 24 horas."
+  },
+  {
+   "seed": 100076,
+   "label": "l:ACR",
+   "lang": "en",
+   "raw": "ADAC",
+   "out_excerpt": "I have opened case <spell>R59-E45</spell> for you. Say the name like /bɔʃ/. We work together with the adac.  Please write down the code <spell>KVD-960030</spell>. "
+  },
+  {
+   "seed": 100078,
+   "label": "l:POSTAL",
+   "lang": "es",
+   "raw": "46001 Valencia",
+   "out_excerpt": "Tiene 4 facturas pendientes.  Su número de cliente: <spell>2233545</spell>. He abierto el expediente <spell>R34-F26</spell> para usted. Nuestro servicio al cliente está en <spell>46001</spell> Valencia. "
+  },
+  {
+   "seed": 100079,
+   "label": "l:POSTAL",
+   "lang": "es",
+   "raw": "46001 Valencia",
+   "out_excerpt": "Su cita.\nLa devolución es solo posible en tienda. Su contraseña de un solo uso es <spell group=\"2\">S9D3D0</spell>. El técnico pasa el 03/11/2026 entre las 13:00 y las 12:00. Encontrará el formulario aquí. Nuestro servicio al cliente está en <spell>46001</spell> Valencia.  Tenga a mano:\nNúmero de serie.\nFactura.\nDocumento de identidad."
+  },
+  {
+   "seed": 100081,
+   "label": "l:POSTAL",
+   "lang": "fr",
+   "raw": "13001 Marseille",
+   "out_excerpt": "Vous trouverez le formulaire ici. Notre service client est basé à <spell>13001</spell> Marseille. Notre assistance au <spell>+33</spell> <spell>6</spell> <spell>56</spell> <spell>17</spell> <spell>33</spell> <spell>65</spell> répond jour et nuit. Votre code est <spell>FM8130LL</spell>. Merci de préparer :\nRelevé bancaire.\nFacture.\nPièce d'identité."
+  },
+  {
+   "seed": 100082,
+   "label": "p:SPELL_NEEDED",
+   "lang": "fr",
+   "raw": "+33 (0)1 95 03 35 40",
+   "out_excerpt": "Vous trouverez le formulaire ici. Notre assistance au +33 (0)1 95 03 35 40 répond jour et nuit. Le retour est gratuit pris en charge. Notre service client est basé à <spell>13001</spell> Marseille."
+  },
+  {
+   "seed": 100082,
+   "label": "l:POSTAL",
+   "lang": "fr",
+   "raw": "13001 Marseille",
+   "out_excerpt": "Vous trouverez le formulaire ici. Notre assistance au +33 (0)1 95 03 35 40 répond jour et nuit. Le retour est gratuit pris en charge. Notre service client est basé à <spell>13001</spell> Marseille."
+  },
+  {
+   "seed": 100084,
+   "label": "l:ACR",
+   "lang": "en",
+   "raw": "SNCF",
+   "out_excerpt": "The check code is <spell>HX32</spell> <spell>96GF</spell>. Case <spell>967819</spell> has been passed to our engineers. We work together with the sncf. Your new code is <spell>9E8V-4Q4H</spell>."
+  },
+  {
+   "seed": 100086,
+   "label": "l:POSTAL",
+   "lang": "fr",
+   "raw": "33000 Bordeaux",
+   "out_excerpt": "Je regarde <break time=\"500ms\"/><break time=\"500ms\"/> voilà, je suis de retour. J'ai ouvert le dossier <spell>1M2F-7R6Y</spell> pour vous. Notre service client est basé à <spell>33000</spell> Bordeaux."
+  },
+  {
+   "seed": 100087,
+   "label": "l:POSTAL",
+   "lang": "fr",
+   "raw": "13001 Marseille",
+   "out_excerpt": "Nous travaillons avec la NHS.  Notez bien le code <spell>5J4K-1C6U</spell>. Notre service client est basé à <spell>13001</spell> Marseille. Merci de préparer :\nRelevé bancaire.\nNuméro de série.\nPièce d'identité."
+  },
+  {
+   "seed": 100088,
+   "label": "l:POSTAL",
+   "lang": "es",
+   "raw": "46001 Valencia",
+   "out_excerpt": "Nuestro servicio al cliente está en <spell>46001</spell> Valencia. Ya está todo listo <break time=\"400ms\"/> para su visita. Su contraseña de un solo uso es <spell group=\"2\">J3Q9R0</spell>. Encontrará el formulario el portal de devoluciones. Nuestra línea 643 93 90 12 atiende las 24 horas. Tenga a mano:\nDocumento de identidad.\nNúmero de serie.\nExtracto bancario."
+  },
+  {
+   "seed": 100088,
+   "label": "p:SPELL_NEEDED",
+   "lang": "es",
+   "raw": "643 93 90 12",
+   "out_excerpt": "Nuestro servicio al cliente está en <spell>46001</spell> Valencia. Ya está todo listo <break time=\"400ms\"/> para su visita. Su contraseña de un solo uso es <spell group=\"2\">J3Q9R0</spell>. Encontrará el formulario el portal de devoluciones. Nuestra línea 643 93 90 12 atiende las 24 horas. Tenga a mano:\nDocumento de identidad.\nNúmero de serie.\nExtracto bancario."
+  },
+  {
+   "seed": 100091,
+   "label": "p:SPELL_NEEDED",
+   "lang": "es",
+   "raw": "service_martin@shop.co.uk",
+   "out_excerpt": "Resumen.\nApunte el código <spell>UND-397038</spell>.  Escríbanos a <spell>service</spell> Unterstrich <spell>martin@shop.co.uk</spell> si falta algo.  Buenos días, ustedes López, su paquete ha llegado. Trabajamos con Bbva para los pagos. El caso <spell>994886</spell> ha pasado a nuestros técnicos. Tenga a mano:\nNúmero de serie.\nFactura.\nDocumento de identidad."
+  },
+  {
+   "seed": 100091,
+   "label": "l:ACR",
+   "lang": "es",
+   "raw": "BBVA",
+   "out_excerpt": "Resumen.\nApunte el código <spell>UND-397038</spell>.  Escríbanos a <spell>service</spell> Unterstrich <spell>martin@shop.co.uk</spell> si falta algo.  Buenos días, ustedes López, su paquete ha llegado. Trabajamos con Bbva para los pagos. El caso <spell>994886</spell> ha pasado a nuestros técnicos. Tenga a mano:\nNúmero de serie.\nFactura.\nDocumento de identidad."
+  },
+  {
+   "seed": 100091,
+   "label": "p:LANGUAGE",
+   "lang": "es",
+   "raw": "session=de turn=es",
+   "out_excerpt": "Resumen.\nApunte el código <spell>UND-397038</spell>.  Escríbanos a <spell>service</spell> Unterstrich <spell>martin@shop.co.uk</spell> si falta algo.  Buenos días, ustedes López, su paquete ha llegado. Trabajamos con Bbva para los pagos. El caso <spell>994886</spell> ha pasado a nuestros técnicos. Tenga a mano:\nNúmero de serie.\nFactura.\nDocumento de identidad."
+  },
+  {
+   "seed": 100092,
+   "label": "l:ACR",
+   "lang": "fr",
+   "raw": "BBVA",
+   "out_excerpt": "Nous travaillons avec la bbva. Le technicien passe le 31 décembre entre 17:30 et 12:00. Le cas <spell>612675</spell> a été transmis à nos techniciens."
+  },
+  {
+   "seed": 100095,
+   "label": "l:ACR",
+   "lang": "es",
+   "raw": "SNCF",
+   "out_excerpt": "Tiene 8 facturas pendientes. Trabajamos con sncf para los pagos. El técnico pasa el 03/11/2026 entre las 17:00 y las 12:00. Nuestra línea 644 76 67 30 atiende las 24 horas.  Nuestro servicio al cliente está en <spell>46001</spell> Valencia."
+  },
+  {
+   "seed": 100095,
+   "label": "p:SPELL_NEEDED",
+   "lang": "es",
+   "raw": "644 76 67 30",
+   "out_excerpt": "Tiene 8 facturas pendientes. Trabajamos con sncf para los pagos. El técnico pasa el 03/11/2026 entre las 17:00 y las 12:00. Nuestra línea 644 76 67 30 atiende las 24 horas.  Nuestro servicio al cliente está en <spell>46001</spell> Valencia."
+  },
+  {
+   "seed": 100095,
+   "label": "l:POSTAL",
+   "lang": "es",
+   "raw": "46001 Valencia",
+   "out_excerpt": "Tiene 8 facturas pendientes. Trabajamos con sncf para los pagos. El técnico pasa el 03/11/2026 entre las 17:00 y las 12:00. Nuestra línea 644 76 67 30 atiende las 24 horas.  Nuestro servicio al cliente está en <spell>46001</spell> Valencia."
+  },
+  {
+   "seed": 100098,
+   "label": "p:SPELL_NEEDED",
+   "lang": "es",
+   "raw": "662 53 44 31",
+   "out_excerpt": "Su cita.\nEl caso <spell>278164</spell> ha pasado a nuestros técnicos. Su número de cliente: <spell>43961907</spell>.  Buenos días, señor López, su paquete ha llegado. Nuestra línea 662 53 44 31 atiende las 24 horas. Trabajamos con AXA para los pagos."
+  },
+  {
+   "seed": 100104,
+   "label": "l:POSTAL",
+   "lang": "fr",
+   "raw": "33000 Bordeaux",
+   "out_excerpt": "Votre numéro client : <spell>44501345</spell>. Écrivez-nous à <spell>service</spell> tiret bas <spell>fischer@boutique.fr</spell> s'il manque quelque chose. Le technicien passe le 31 décembre entre 12:30 et 12:00. Notre service client est basé à <spell>33000</spell> Bordeaux.  Merci de préparer :\nFacture.\nNuméro de série.\nPièce d'identité."
+  },
+  {
+   "seed": 100107,
+   "label": "l:POSTAL",
+   "lang": "de",
+   "raw": "50667 Köln",
+   "out_excerpt": "Unser Kundenservice sitzt in <spell>50667</spell> Köln. Ich habe den Vorgang <spell>JA7708PG</spell> für Sie angelegt. Ich kümmere mich sofort darum, Lea. "
+  },
+  {
+   "seed": 100108,
+   "label": "l:POSTAL",
+   "lang": "es",
+   "raw": "41001 Sevilla",
+   "out_excerpt": "Su número de cliente: <spell>84509098</spell>. Trabajamos con NHS para los pagos. Nuestro servicio al cliente está en <spell>41001</spell> Sevilla. El caso <spell>901795</spell> ha pasado a nuestros técnicos. "
+  },
+  {
+   "seed": 100112,
+   "label": "l:POSTAL",
+   "lang": "es",
+   "raw": "41001 Sevilla",
+   "out_excerpt": "Buenos días, ustedes López, su paquete ha llegado.  La devolución es solo posible en tienda. El reembolso de 19,99 EUR va a <spell>XT69</spell> <spell>0553</spell> <spell>2834</spell> <spell>2377</spell> <spell>8821</spell>. Su número de cliente: <spell>54997686</spell>.  Nuestro servicio al cliente está en <spell>41001</spell> Sevilla."
+  },
+  {
+   "seed": 100115,
+   "label": "l:POSTAL",
+   "lang": "es",
+   "raw": "41001 Sevilla",
+   "out_excerpt": "Nuestro servicio al cliente está en <spell>41001</spell> Sevilla. Escríbanos a <spell>elias-moreau@boutique.fr</spell> si falta algo. Su número de cliente: <spell>81940617</spell>."
+  },
+  {
+   "seed": 100118,
+   "label": "l:POSTAL",
+   "lang": "es",
+   "raw": "41001 Sevilla",
+   "out_excerpt": "Su cita.\nLa devolución es gratis posible en tienda. Nuestro servicio al cliente está en <spell>41001</spell> Sevilla. Buenos días, señor López, su paquete ha llegado."
+  },
+  {
+   "seed": 100119,
+   "label": "p:SPELL_NEEDED",
+   "lang": "es",
+   "raw": "603 70 56 14",
+   "out_excerpt": "El técnico pasa el 03/11/2026 entre las 12:45 y las 12:00. Nuestra línea 603 70 56 14 atiende las 24 horas. Nuestro servicio al cliente está en <spell>46001</spell> Valencia."
+  },
+  {
+   "seed": 100119,
+   "label": "l:POSTAL",
+   "lang": "es",
+   "raw": "46001 Valencia",
+   "out_excerpt": "El técnico pasa el 03/11/2026 entre las 12:45 y las 12:00. Nuestra línea 603 70 56 14 atiende las 24 horas. Nuestro servicio al cliente está en <spell>46001</spell> Valencia."
+  },
+  {
+   "seed": 100125,
+   "label": "p:SPELL_NEEDED",
+   "lang": "en",
+   "raw": "(415) 555-7282",
+   "out_excerpt": "Your customer ID: <spell>72011271</spell>.  We work together with the NHS. The engineer comes on December 31st between 18:00 and 12:00.  Say the name like /bɔʃ/. Our hotline (415) 555-7282 is open around the clock."
+  },
+  {
+   "seed": 100133,
+   "label": "p:LANGUAGE",
+   "lang": "en",
+   "raw": "session=es turn=en",
+   "out_excerpt": "I have opened case <spell>4Z1E-2G0Y</spell> for you. Your new code is <spell>8R7Z-6C1U</spell>. Your B737-800 booking is confirmed."
+  },
+  {
+   "seed": 100134,
+   "label": "l:POSTAL",
+   "lang": "de",
+   "raw": "50667 Köln",
+   "out_excerpt": "Unser Kundenservice sitzt in <spell>50667</spell> Köln. Schreiben Sie uns gern an <spell>service</spell> Unterstrich <spell>fischer@boutique.fr</spell>, falls noch etwas fehlt. Die Erstattung über 2.499 € geht auf <spell>ZT83</spell> <spell>4664</spell> <spell>7275</spell> <spell>2030</spell> <spell>0537</spell>. Ihr Flug mit der B737-800 ist bestätigt. Wir arbeiten mit dem Sncf zusammen."
+  },
+  {
+   "seed": 100134,
+   "label": "l:ACR",
+   "lang": "de",
+   "raw": "SNCF",
+   "out_excerpt": "Unser Kundenservice sitzt in <spell>50667</spell> Köln. Schreiben Sie uns gern an <spell>service</spell> Unterstrich <spell>fischer@boutique.fr</spell>, falls noch etwas fehlt. Die Erstattung über 2.499 € geht auf <spell>ZT83</spell> <spell>4664</spell> <spell>7275</spell> <spell>2030</spell> <spell>0537</spell>. Ihr Flug mit der B737-800 ist bestätigt. Wir arbeiten mit dem Sncf zusammen."
+  },
+  {
+   "seed": 100137,
+   "label": "l:POSTAL",
+   "lang": "es",
+   "raw": "46001 Valencia",
+   "out_excerpt": "Nuestro servicio al cliente está en <spell>46001</spell> Valencia. Lo miro <break time=\"500ms\"/><break time=\"500ms\"/> listo, ya estoy. El caso <spell>354838</spell> ha pasado a nuestros técnicos. He abierto el expediente <spell>U69-U29</spell> para usted."
+  },
+  {
+   "seed": 100146,
+   "label": "l:POSTAL",
+   "lang": "fr",
+   "raw": "33000 Bordeaux",
+   "out_excerpt": "Votre code est <spell>PR2904BN</spell>. Écrivez-nous à <spell>lukas</spell> tiret bas <spell>3@kundenservice.de</spell> s'il manque quelque chose. Notre service client est basé à <spell>33000</spell> Bordeaux. Merci de préparer :\nRelevé bancaire.\nNuméro de série.\nPièce d'identité."
+  },
+  {
+   "seed": 100147,
+   "label": "p:ALL_CAPS",
+   "lang": "es",
+   "raw": "HOY",
+   "out_excerpt": "Lo miro <break time=\"500ms\"/><break time=\"500ms\"/> listo, ya estoy. La devolución es HOY posible en tienda. Nuestro servicio al cliente está en <spell>46001</spell> Valencia."
+  },
+  {
+   "seed": 100147,
+   "label": "l:POSTAL",
+   "lang": "es",
+   "raw": "46001 Valencia",
+   "out_excerpt": "Lo miro <break time=\"500ms\"/><break time=\"500ms\"/> listo, ya estoy. La devolución es HOY posible en tienda. Nuestro servicio al cliente está en <spell>46001</spell> Valencia."
+  },
+  {
+   "seed": 100149,
+   "label": "p:SPELL_NEEDED",
+   "lang": "de",
+   "raw": "(030) 9771-0897",
+   "out_excerpt": "Unsere Hotline (030) 9771-0897 ist rund um die Uhr erreichbar.  Notieren Sie sich bitte den Code <spell>BDS-643456</spell>. Der Techniker kommt am 03.11.2026 zwischen 18:45 und 12:00.  Unser Kundenservice sitzt in <spell>20095</spell> Hamburg. Ihr Einmalpasswort lautet <spell group=\"2\">R4U2H2</spell>."
+  },
+  {
+   "seed": 100149,
+   "label": "l:POSTAL",
+   "lang": "de",
+   "raw": "20095 Hamburg",
+   "out_excerpt": "Unsere Hotline (030) 9771-0897 ist rund um die Uhr erreichbar.  Notieren Sie sich bitte den Code <spell>BDS-643456</spell>. Der Techniker kommt am 03.11.2026 zwischen 18:45 und 12:00.  Unser Kundenservice sitzt in <spell>20095</spell> Hamburg. Ihr Einmalpasswort lautet <spell group=\"2\">R4U2H2</spell>."
+  }
+ ]
+}

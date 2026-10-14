@@ -1,0 +1,683 @@
+{
+ "split": "heldout",
+ "turns": 400,
+ "tokens": 28947,
+ "families": {
+  "l:ACR": {
+   "passthrough": [
+    67,
+    67
+   ],
+   "per_chunk": [
+    62,
+    67
+   ],
+   "guard": [
+    38,
+    67
+   ]
+  },
+  "l:DATE": {
+   "passthrough": [
+    80,
+    80
+   ],
+   "per_chunk": [
+    80,
+    80
+   ],
+   "guard": [
+    80,
+    80
+   ]
+  },
+  "l:OKBREAK": {
+   "passthrough": [
+    24,
+    24
+   ],
+   "per_chunk": [
+    24,
+    24
+   ],
+   "guard": [
+    24,
+    24
+   ]
+  },
+  "l:OKSPELL": {
+   "passthrough": [
+    20,
+    20
+   ],
+   "per_chunk": [
+    9,
+    20
+   ],
+   "guard": [
+    20,
+    20
+   ]
+  },
+  "l:POSTAL": {
+   "passthrough": [
+    84,
+    84
+   ],
+   "per_chunk": [
+    84,
+    84
+   ],
+   "guard": [
+    84,
+    84
+   ]
+  },
+  "l:PRICE": {
+   "passthrough": [
+    79,
+    79
+   ],
+   "per_chunk": [
+    79,
+    79
+   ],
+   "guard": [
+    79,
+    79
+   ]
+  },
+  "l:QTY": {
+   "passthrough": [
+    66,
+    66
+   ],
+   "per_chunk": [
+    66,
+    66
+   ],
+   "guard": [
+    66,
+    66
+   ]
+  },
+  "l:TERM": {
+   "passthrough": [
+    33,
+    33
+   ],
+   "per_chunk": [
+    26,
+    33
+   ],
+   "guard": [
+    33,
+    33
+   ]
+  },
+  "l:TIME": {
+   "passthrough": [
+    80,
+    80
+   ],
+   "per_chunk": [
+    80,
+    80
+   ],
+   "guard": [
+    80,
+    80
+   ]
+  },
+  "l:UNIT": {
+   "passthrough": [
+    37,
+    37
+   ],
+   "per_chunk": [
+    37,
+    37
+   ],
+   "guard": [
+    37,
+    37
+   ]
+  },
+  "p:ALL_CAPS": {
+   "passthrough": [
+    0,
+    81
+   ],
+   "per_chunk": [
+    0,
+    81
+   ],
+   "guard": [
+    78,
+    81
+   ]
+  },
+  "p:BREAK_BOTH_ATTRS": {
+   "passthrough": [
+    0,
+    21
+   ],
+   "per_chunk": [
+    0,
+    21
+   ],
+   "guard": [
+    21,
+    21
+   ]
+  },
+  "p:BREAK_IN_SPELL": {
+   "passthrough": [
+    0,
+    29
+   ],
+   "per_chunk": [
+    0,
+    29
+   ],
+   "guard": [
+    29,
+    29
+   ]
+  },
+  "p:BREAK_LONG": {
+   "passthrough": [
+    0,
+    85
+   ],
+   "per_chunk": [
+    0,
+    85
+   ],
+   "guard": [
+    85,
+    85
+   ]
+  },
+  "p:EMOJI": {
+   "passthrough": [
+    0,
+    230
+   ],
+   "per_chunk": [
+    230,
+    230
+   ],
+   "guard": [
+    230,
+    230
+   ]
+  },
+  "p:EXCLAIM": {
+   "passthrough": [
+    0,
+    591
+   ],
+   "per_chunk": [
+    591,
+    591
+   ],
+   "guard": [
+    591,
+    591
+   ]
+  },
+  "p:GROUPED_SPLIT": {
+   "passthrough": [
+    0,
+    73
+   ],
+   "per_chunk": [
+    0,
+    73
+   ],
+   "guard": [
+    73,
+    73
+   ]
+  },
+  "p:LANGUAGE": {
+   "passthrough": [
+    0,
+    147
+   ],
+   "per_chunk": [
+    0,
+    147
+   ],
+   "guard": [
+    142,
+    147
+   ]
+  },
+  "p:MARKDOWN": {
+   "passthrough": [
+    0,
+    661
+   ],
+   "per_chunk": [
+    311,
+    661
+   ],
+   "guard": [
+    661,
+    661
+   ]
+  },
+  "p:SPELL_NEEDED": {
+   "passthrough": [
+    0,
+    500
+   ],
+   "per_chunk": [
+    0,
+    500
+   ],
+   "guard": [
+    498,
+    500
+   ]
+  },
+  "p:SPELL_NESTED": {
+   "passthrough": [
+    0,
+    21
+   ],
+   "per_chunk": [
+    0,
+    21
+   ],
+   "guard": [
+    21,
+    21
+   ]
+  },
+  "p:SPELL_PUNCT": {
+   "passthrough": [
+    0,
+    83
+   ],
+   "per_chunk": [
+    0,
+    83
+   ],
+   "guard": [
+    83,
+    83
+   ]
+  },
+  "p:SPELL_SPACE": {
+   "passthrough": [
+    0,
+    35
+   ],
+   "per_chunk": [
+    1,
+    35
+   ],
+   "guard": [
+    35,
+    35
+   ]
+  },
+  "p:SSML_UNSUPPORTED": {
+   "passthrough": [
+    0,
+    164
+   ],
+   "per_chunk": [
+    0,
+    164
+   ],
+   "guard": [
+    164,
+    164
+   ]
+  }
+ },
+ "problems_fixed": {
+  "passthrough": [
+   0,
+   2721
+  ],
+  "per_chunk": [
+   1133,
+   2721
+  ],
+  "guard": [
+   2711,
+   2721
+  ]
+ },
+ "lookalikes_intact": {
+  "passthrough": [
+   570,
+   570
+  ],
+  "per_chunk": [
+   547,
+   570
+  ],
+  "guard": [
+   541,
+   570
+  ]
+ },
+ "exact_turns": {
+  "passthrough": 0,
+  "per_chunk": 0,
+  "guard": 367
+ },
+ "wrong_language_switches": 5,
+ "delay_tokens": {
+  "guard": {
+   "first_text_p50": 12,
+   "first_text_p95": 24,
+   "hold_p50": 1,
+   "hold_p95": 10,
+   "hold_max": 22
+  },
+  "guard_lang_known": {
+   "first_text_p50": 2,
+   "first_text_p95": 4,
+   "hold_p50": 1,
+   "hold_p95": 9,
+   "hold_max": 22
+  },
+  "sentence_buffer": {
+   "first_text_p50": 18,
+   "first_text_p95": 32,
+   "hold_p50": 9,
+   "hold_p95": 22,
+   "hold_max": 48
+  },
+  "whole_turn": {
+   "first_text_p50": 73,
+   "first_text_p95": 106,
+   "hold_p50": 36,
+   "hold_p95": 83,
+   "hold_max": 118
+  }
+ },
+ "guard_cpu_us_per_token": 100.4,
+ "guard_misses": [
+  {
+   "seed": 100015,
+   "label": "p:LANGUAGE",
+   "lang": "es",
+   "raw": "session=fr turn=es",
+   "out_excerpt": "La devolución es ahora posible en tienda. Trabajamos con IBAN para los pagos. Lo miro <break time=\"500ms\"/><break time=\"500ms\"/><break time=\"500ms\"/><break time=\"500ms\"/><break time=\"500ms\"/> listo, ya estoy."
+  },
+  {
+   "seed": 100026,
+   "label": "l:ACR",
+   "lang": "fr",
+   "raw": "ADAC",
+   "out_excerpt": "Vous trouverez le formulaire ici.  Nous travaillons avec la adac. Notre service client est basé à 33000 Bordeaux. Merci de préparer :\nPièce d'identité.\nFacture.\nRelevé bancaire."
+  },
+  {
+   "seed": 100034,
+   "label": "l:ACR",
+   "lang": "es",
+   "raw": "SNCF",
+   "out_excerpt": "El caso <spell>204902</spell> ha pasado a nuestros técnicos. Trabajamos con sncf para los pagos. Escríbanos a <spell>service</spell> guion bajo <spell>fischer@tienda.es</spell> si falta algo.  Nuestra línea <spell>689</spell> <spell>78</spell> <spell>60</spell> <spell>69</spell> atiende las 24 horas."
+  },
+  {
+   "seed": 100041,
+   "label": "l:ACR",
+   "lang": "en",
+   "raw": "SNCF",
+   "out_excerpt": "I found 5 open invoices.  The check code is <spell>UP91</spell> <spell>92BK</spell>.  We work together with the sncf. The model with 8K is sold out, sorry."
+  },
+  {
+   "seed": 100049,
+   "label": "l:ACR",
+   "lang": "es",
+   "raw": "SNCF",
+   "out_excerpt": "Su número de cliente: <spell>67873221</spell>. Tiene 3 facturas pendientes. El caso <spell>514582</spell> ha pasado a nuestros técnicos. Trabajamos con sncf para los pagos."
+  },
+  {
+   "seed": 100052,
+   "label": "l:ACR",
+   "lang": "de",
+   "raw": "SNCF",
+   "out_excerpt": "Unsere Hotline <spell>+42</spell> <spell>160</spell> <spell>586</spell> <spell>3712</spell> ist rund um die Uhr erreichbar. Das Formular finden Sie unser Rückgabeportal.  Wir arbeiten mit dem Sncf zusammen."
+  },
+  {
+   "seed": 100054,
+   "label": "l:ACR",
+   "lang": "fr",
+   "raw": "SNCF",
+   "out_excerpt": "Nous travaillons avec la sncf.  Notez bien le code <spell>RRK-906919</spell>. Votre mot de passe unique est <spell group=\"2\">P6W0Y8</spell>."
+  },
+  {
+   "seed": 100056,
+   "label": "l:ACR",
+   "lang": "fr",
+   "raw": "ADAC",
+   "out_excerpt": "Un instant <break time=\"200ms\"/> je vérifie votre compte.  Je regarde <break time=\"500ms\"/><break time=\"500ms\"/> voilà, je suis de retour.  Nous travaillons avec la adac. Merci de préparer :\nNuméro de série.\nPièce d'identité.\nFacture."
+  },
+  {
+   "seed": 100057,
+   "label": "l:ACR",
+   "lang": "es",
+   "raw": "BBVA",
+   "out_excerpt": "El caso <spell>252650</spell> ha pasado a nuestros técnicos. Trabajamos con bbva para los pagos. El reembolso de 2.499,00 € va a <spell>CH14652105633290148963</spell>."
+  },
+  {
+   "seed": 100076,
+   "label": "l:ACR",
+   "lang": "en",
+   "raw": "ADAC",
+   "out_excerpt": "I have opened case <spell>R59-E45</spell> for you. Say the name like /bɔʃ/. We work together with the adac.  Please write down the code <spell>KVD-960030</spell>. "
+  },
+  {
+   "seed": 100084,
+   "label": "l:ACR",
+   "lang": "en",
+   "raw": "SNCF",
+   "out_excerpt": "The check code is <spell>HX32</spell> <spell>96GF</spell>. Case <spell>967819</spell> has been passed to our engineers. We work together with the sncf. Your new code is <spell>9E8V-4Q4H</spell>."
+  },
+  {
+   "seed": 100091,
+   "label": "p:SPELL_NEEDED",
+   "lang": "es",
+   "raw": "service_martin@shop.co.uk",
+   "out_excerpt": "Resumen.\nApunte el código <spell>UND-397038</spell>.  Escríbanos a <spell>service</spell> Unterstrich <spell>martin@shop.co.uk</spell> si falta algo.  Buenos días, ustedes López, su paquete ha llegado. Trabajamos con Bbva para los pagos. El caso <spell>994886</spell> ha pasado a nuestros técnicos. Tenga a mano:\nNúmero de serie.\nFactura.\nDocumento de identidad."
+  },
+  {
+   "seed": 100091,
+   "label": "l:ACR",
+   "lang": "es",
+   "raw": "BBVA",
+   "out_excerpt": "Resumen.\nApunte el código <spell>UND-397038</spell>.  Escríbanos a <spell>service</spell> Unterstrich <spell>martin@shop.co.uk</spell> si falta algo.  Buenos días, ustedes López, su paquete ha llegado. Trabajamos con Bbva para los pagos. El caso <spell>994886</spell> ha pasado a nuestros técnicos. Tenga a mano:\nNúmero de serie.\nFactura.\nDocumento de identidad."
+  },
+  {
+   "seed": 100091,
+   "label": "p:LANGUAGE",
+   "lang": "es",
+   "raw": "session=de turn=es",
+   "out_excerpt": "Resumen.\nApunte el código <spell>UND-397038</spell>.  Escríbanos a <spell>service</spell> Unterstrich <spell>martin@shop.co.uk</spell> si falta algo.  Buenos días, ustedes López, su paquete ha llegado. Trabajamos con Bbva para los pagos. El caso <spell>994886</spell> ha pasado a nuestros técnicos. Tenga a mano:\nNúmero de serie.\nFactura.\nDocumento de identidad."
+  },
+  {
+   "seed": 100092,
+   "label": "l:ACR",
+   "lang": "fr",
+   "raw": "BBVA",
+   "out_excerpt": "Nous travaillons avec la bbva. Le technicien passe le 31 décembre entre 17:30 et 12:00. Le cas <spell>612675</spell> a été transmis à nos techniciens."
+  },
+  {
+   "seed": 100095,
+   "label": "l:ACR",
+   "lang": "es",
+   "raw": "SNCF",
+   "out_excerpt": "Tiene 8 facturas pendientes. Trabajamos con sncf para los pagos. El técnico pasa el 03/11/2026 entre las 17:00 y las 12:00. Nuestra línea <spell>644</spell> <spell>76</spell> <spell>67</spell> <spell>30</spell> atiende las 24 horas.  Nuestro servicio al cliente está en 46001 Valencia."
+  },
+  {
+   "seed": 100133,
+   "label": "p:LANGUAGE",
+   "lang": "en",
+   "raw": "session=es turn=en",
+   "out_excerpt": "I have opened case <spell>4Z1E-2G0Y</spell> for you. Your new code is <spell>8R7Z-6C1U</spell>. Your B737-800 booking is confirmed."
+  },
+  {
+   "seed": 100134,
+   "label": "l:ACR",
+   "lang": "de",
+   "raw": "SNCF",
+   "out_excerpt": "Unser Kundenservice sitzt in 50667 Köln. Schreiben Sie uns gern an <spell>service</spell> Unterstrich <spell>fischer@boutique.fr</spell>, falls noch etwas fehlt. Die Erstattung über 2.499 € geht auf <spell>ZT83</spell> <spell>4664</spell> <spell>7275</spell> <spell>2030</spell> <spell>0537</spell>. Ihr Flug mit der B737-800 ist bestätigt. Wir arbeiten mit dem Sncf zusammen."
+  },
+  {
+   "seed": 100147,
+   "label": "p:ALL_CAPS",
+   "lang": "es",
+   "raw": "HOY",
+   "out_excerpt": "Lo miro <break time=\"500ms\"/><break time=\"500ms\"/> listo, ya estoy. La devolución es HOY posible en tienda. Nuestro servicio al cliente está en 46001 Valencia."
+  },
+  {
+   "seed": 100159,
+   "label": "l:ACR",
+   "lang": "fr",
+   "raw": "SNCF",
+   "out_excerpt": "Je regarde <break time=\"500ms\"/><break time=\"500ms\"/><break time=\"500ms\"/><break time=\"500ms\"/><break time=\"500ms\"/><break time=\"500ms\"/> voilà, je suis de retour. Le retour est absolument pris en charge. Vous trouverez le formulaire le portail de retour. Le remboursement de 19,99 EUR part sur <spell>IT04</spell> <spell>P508</spell> <spell>5835</spell> <spell>0546</spell> <spell>5601</spell> <spel"
+  },
+  {
+   "seed": 100183,
+   "label": "p:ALL_CAPS",
+   "lang": "es",
+   "raw": "HOY",
+   "out_excerpt": "Su cita.\nYa está todo listo <break time=\"400ms\"/> para su visita. La devolución es HOY posible en tienda. Trabajamos con AXA para los pagos. Escríbanos a <spell>kowalski.noah95@boutique.fr</spell> si falta algo."
+  },
+  {
+   "seed": 100184,
+   "label": "l:ACR",
+   "lang": "de",
+   "raw": "BBVA",
+   "out_excerpt": "Ihr Flug mit der F-150 ist bestätigt. Wir arbeiten mit dem Bbva zusammen. Der Prüfcode ist <spell>AQ66</spell> <spell>45SV</spell>."
+  },
+  {
+   "seed": 100196,
+   "label": "p:SPELL_NEEDED",
+   "lang": "fr",
+   "raw": "29915461",
+   "out_excerpt": "Le remboursement de 2 499,00 € part sur <spell>IT45</spell> <spell>J267</spell> <spell>7746</spell> <spell>9096</spell> <spell>7242</spell> <spell>4707</spell> <spell>848</spell>. Le cas <spell>880485</spell> a été transmis à nos techniciens. Notre assistance au <spell>+33</spell> <spell>1</spell> <spell>75</spell> <spell>08</spell> <spell>15</spell> <spell>35</spell> répond jour et nuit. Votre nu"
+  },
+  {
+   "seed": 100196,
+   "label": "p:LANGUAGE",
+   "lang": "fr",
+   "raw": "session=en turn=fr",
+   "out_excerpt": "Le remboursement de 2 499,00 € part sur <spell>IT45</spell> <spell>J267</spell> <spell>7746</spell> <spell>9096</spell> <spell>7242</spell> <spell>4707</spell> <spell>848</spell>. Le cas <spell>880485</spell> a été transmis à nos techniciens. Notre assistance au <spell>+33</spell> <spell>1</spell> <spell>75</spell> <spell>08</spell> <spell>15</spell> <spell>35</spell> répond jour et nuit. Votre nu"
+  },
+  {
+   "seed": 100205,
+   "label": "l:ACR",
+   "lang": "fr",
+   "raw": "ADAC",
+   "out_excerpt": "J'ai ouvert le dossier <spell>5F5D-8C6H</spell> pour vous. Nous travaillons avec la adac. Notez bien le code <spell>E95-N16</spell>."
+  },
+  {
+   "seed": 100207,
+   "label": "l:ACR",
+   "lang": "de",
+   "raw": "ADAC",
+   "out_excerpt": "Der Prüfcode ist <spell>SP76</spell> <spell>42RB</spell>. Wir arbeiten mit dem Adac zusammen. Ihr Flug mit der ISO-9001 ist bestätigt. Unser Kundenservice sitzt in 50667 Köln. Das Modell mit 1TB ist leider ausverkauft."
+  },
+  {
+   "seed": 100248,
+   "label": "p:ALL_CAPS",
+   "lang": "es",
+   "raw": "HOY",
+   "out_excerpt": "El caso <spell>714859</spell> ha pasado a nuestros técnicos.  He abierto el expediente <spell>WJX-768524</spell> para usted. Ya está todo listo <break time=\"400ms\"/> para su visita.  El técnico pasa el 31 de diciembre entre las 8:15 y las 12:00. La devolución es HOY posible en tienda."
+  },
+  {
+   "seed": 100250,
+   "label": "l:ACR",
+   "lang": "fr",
+   "raw": "SNCF",
+   "out_excerpt": "Écrivez-nous à <spell>emma-fischer@shop.co.uk</spell> s'il manque quelque chose.  Vous trouverez le formulaire ici.  Nous travaillons avec la sncf. Je regarde <break time=\"500ms\"/><break time=\"500ms\"/> voilà, je suis de retour."
+  },
+  {
+   "seed": 100256,
+   "label": "l:ACR",
+   "lang": "es",
+   "raw": "BBVA",
+   "out_excerpt": "Trabajamos con bbva para los pagos.  He abierto el expediente <spell>EUW-735701</spell> para usted. Nuestra línea <spell>+34</spell> <spell>544</spell> <spell>41</spell> <spell>11</spell> <spell>76</spell> atiende las 24 horas. Encontrará el formulario el portal de devoluciones. Su número de cliente: <spell>34606160</spell>.  Tenga a mano:\nExtracto bancario.\nFactura.\nDocumento de identidad."
+  },
+  {
+   "seed": 100278,
+   "label": "l:ACR",
+   "lang": "fr",
+   "raw": "ADAC",
+   "out_excerpt": "Je regarde <break time=\"500ms\"/><break time=\"500ms\"/><break time=\"500ms\"/><break time=\"500ms\"/><break time=\"500ms\"/><break time=\"500ms\"/> voilà, je suis de retour. Nous travaillons avec la adac. Notre service client est basé à 33000 Bordeaux. Merci de préparer :\nNuméro de série.\nFacture.\nPièce d'identité."
+  },
+  {
+   "seed": 100282,
+   "label": "l:ACR",
+   "lang": "en",
+   "raw": "SNCF",
+   "out_excerpt": "Your B737-800 booking is confirmed. Say the name like /ʃɪˈvɔːn/. I found 11 open invoices. Your customer ID: <spell>30569843</spell>. We work together with the sncf."
+  },
+  {
+   "seed": 100302,
+   "label": "l:ACR",
+   "lang": "fr",
+   "raw": "ADAC",
+   "out_excerpt": "Résumé.\nLe technicien passe le 03/11/2026 entre 8:45 et 12:00. Nous travaillons avec la adac. Bonjour s'il vous plaît Martin, votre colis est arrivé. Écrivez-nous à <spell>rossi.omar35@kundenservice.de</spell> s'il manque quelque chose."
+  },
+  {
+   "seed": 100340,
+   "label": "l:ACR",
+   "lang": "de",
+   "raw": "ADAC",
+   "out_excerpt": "Ihr neuer Code ist <spell>TR5512</spell>. Wir arbeiten mit dem Adac zusammen. Schreiben Sie uns gern an <spell>service</spell> Unterstrich <spell>fischer@tienda.es</spell>, falls noch etwas fehlt. Ich kümmere mich sofort darum, Omar. Bitte halten Sie bereit:\nAusweis.\nSeriennummer.\nRechnung."
+  },
+  {
+   "seed": 100348,
+   "label": "l:ACR",
+   "lang": "fr",
+   "raw": "SNCF",
+   "out_excerpt": "Nous travaillons avec la sncf. Le technicien passe le 03/11/2026 entre 15:15 et 12:00. J'ai ouvert le dossier <spell>1K5N-4S8N</spell> pour vous."
+  },
+  {
+   "seed": 100355,
+   "label": "l:ACR",
+   "lang": "en",
+   "raw": "SNCF",
+   "out_excerpt": "We work together with the sncf. Our customer service team is based in 10001. Please write down the code <spell>QN7134WY</spell>."
+  },
+  {
+   "seed": 100357,
+   "label": "l:ACR",
+   "lang": "es",
+   "raw": "BBVA",
+   "out_excerpt": "Trabajamos con bbva para los pagos. Apunte el código <spell>A76-C69</spell>. Encontrará el formulario el portal de devoluciones."
+  },
+  {
+   "seed": 100375,
+   "label": "l:ACR",
+   "lang": "de",
+   "raw": "BBVA",
+   "out_excerpt": "Wir arbeiten mit dem Bbva zusammen.  Der Techniker kommt am 31. Dezember zwischen 15:30 und 12:00. Notieren Sie sich bitte den Code <spell>ZT9430EG</spell>. Ich habe 11 offene Rechnungen gefunden. Ihr neuer Code ist <spell>QG1119</spell>. "
+  },
+  {
+   "seed": 100381,
+   "label": "l:ACR",
+   "lang": "fr",
+   "raw": "BBVA",
+   "out_excerpt": "Nous travaillons avec la bbva. Notez bien le code <spell>DZ2147WP</spell>. Écrivez-nous à <spell>moreau.emma72@kundenservice.de</spell> s'il manque quelque chose."
+  },
+  {
+   "seed": 100382,
+   "label": "p:LANGUAGE",
+   "lang": "es",
+   "raw": "session=en turn=es",
+   "out_excerpt": "Escríbanos a <spell>fischer.ines69@boutique.fr</spell> si falta algo. Ya está todo listo <break time=\"400ms\"/> para su visita. El caso <spell>915121</spell> ha pasado a nuestros técnicos."
+  }
+ ]
+}

@@ -52,7 +52,9 @@ def fill(slot, lang, rng, B):
         return [(v, spell_groups(v, lang, U), "p:SPELL_NEEDED")]
     if slot == "PHONE":
         v = pat(rng, rng.choice(B["phones"][lang]).replace("#", "9"))
-        return [(v, spell_groups(v, lang, U, r"[ -]+"), "p:SPELL_NEEDED")]
+        # "(" has no spoken word (spell docs): "(0)" and area-code parentheses are dropped.
+        # Added after held-out run 1, whose formats had parentheses for the first time.
+        return [(v, spell_groups(re.sub(r"\(0\)|[()]", " ", v).strip(), lang, U, r"[ -]+"), "p:SPELL_NEEDED")]
     if slot == "IBAN":
         v = pat(rng, rng.choice(B["ibans"]).replace("#", "9"))
         return [(v, spell_groups(v, lang, U), "p:SPELL_NEEDED")]

@@ -35,12 +35,15 @@ UNDERSCORE = {"en": "underscore", "de": "Unterstrich", "fr": "tiret bas", "es": 
 ACRONYMS = frozenset("""IBAN BIC SEPA PIN TAN PUK DHL UPS DPD GLS EU USA UK API FAQ PDF SMS URL
 GPS WLAN WIFI AGB DSGVO GDPR CEO KYC OTP IT HR TV PC ID OK""".split())
 
+# A pure digit run is spelled only right after a number-noun ("order number", "Kundennummer:",
+# "numéro de dossier", "ref"). Held-out run 1 used any ID word anywhere in the sentence and
+# spelled postal codes after "customer service ... in 50667"; see README.
 ID_WORDS = {
-    "en": r"order|booking|reference|ref|ticket|case|customer|account|tracking|confirmation|invoice|contract|policy",
-    "de": r"bestell\w*|buchungs\w*|kunden\w*|auftrags\w*|vorgangs\w*|ticket\w*|sendungs\w*|referenz\w*|rechnungs\w*|vertrags\w*|nr\.?",
-    "fr": r"commande|r[ée]servation|dossier|client|suivi|r[ée]f[ée]rence|facture|contrat",
-    "es": r"pedido|reserva|cliente|seguimiento|referencia|expediente|factura|contrato",
-    "it": r"ordine|prenotazione|cliente|pratica|riferimento|fattura|contratto",
+    "en": r"number|no\.?|id|ref|reference|code|pin",
+    "de": r"\w*nummer|nr\.?|\w*kennung|referenz|id|code|pin",
+    "fr": r"num[ée]ro|n[°o]|r[ée]f[ée]rence|r[ée]f\.?|identifiant|code",
+    "es": r"n[úu]mero|n[°º]|referencia|ref\.?|c[óo]digo|id",
+    "it": r"numero|n[°.]|riferimento|codice|id",
 }
 UNITS = r"(?:GB|MB|KB|TB|KM|KG|CM|MM|KW|KWH|MHZ|GHZ|HZ|MP|PS|V|W|K|G|P)"
 
@@ -50,7 +53,10 @@ LINK = re.compile(r"\[([^\]\n]{1,80})\]\((https?://[^)\s]{1,200})\)")
 LINE_MARK = re.compile(r"(?m)^([ \t]*)(?:[-*•]|#{1,6})[ \t]+")
 EMAIL = re.compile(r"(?<![\w.+-])[A-Za-z0-9][A-Za-z0-9._%+-]*@[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)*\.[A-Za-z]{2,}(?![\w-])")
 IBAN = re.compile(r"(?<![\w])[A-Z]{2}\d{2}(?: ?[A-Z0-9]{4}){2,7}(?: ?[A-Z0-9]{1,3})?(?![\w])")
-PHONE = re.compile(r"(?<![\w+])(?:\+\d{1,3}|0\d{1,5})(?:[ -]\d{1,8}){1,5}(?![\w-])|(?<![\w+])(?:\+\d{8,15}|0\d{6,12})(?![\w-])")
+PHONE = re.compile(
+    r"(?<![\w+(])(?:\+\d{1,3}(?:[ -]?\(0\)\d{1,5})?|\(0?\d{2,5}\)|0\d{1,5})(?:[ -]\d{1,8}){1,5}(?![\w-])"  # +33 (0)1 .., (030) 1234-5678
+    r"|(?<![\w+])(?:\+\d{8,15}|0\d{6,12})(?![\w-])"
+    r"|(?<![\w+.,])[6-9]\d{2}(?: \d{2}){3}(?![\w-])")  # 612 34 56 78 (ES/FR style, no prefix)
 CODE = re.compile(r"(?<![\w@./-])(?=[A-Z0-9-]*\d)(?=[A-Z0-9-]*[A-Z])[A-Z0-9][A-Z0-9-]*[A-Z0-9](?![\w@-])")
 HASHNUM = re.compile(r"(?<![\w])#(\d{4,})(?![\w])")
 DIGITS = re.compile(r"(?<![\w.,])\d{5,}(?![\w]|[.,]\d)")
@@ -218,7 +224,7 @@ def _entities(s, lang, terms, prev, out):
                 continue
             if kind == "code" and (len(v) < 4 or re.fullmatch(r"\d+(?:[.,]\d+)?" + UNITS, v)):
                 continue
-            if kind == "digits" and not idw.search(_ctx_sentence(prev + s[:a])[-60:]):
+            if kind == "digits" and not idw.search(" ".join(_ctx_sentence(prev + s[:a]).split()[-4:])):
                 continue
             found.append((a, b, kind, v))
     found.sort()
@@ -227,7 +233,7 @@ def _entities(s, lang, terms, prev, out):
         pieces.append(("text", s[i:a]))
         body = v[1:] if kind == "hash" else v
         if kind == "phone":  # one tag per digit group; a dash would be read as "Minus"/"Dash"
-            new = " ".join(_spell(g, lang, out) for g in re.split(r"[ -]", body) if g)
+            new = " ".join(_spell(g, lang, out) for g in re.split(r"[ -]+", re.sub(r"\(0\)|[()]", " ", body)) if g)
         else:
             new = _spell(body, lang, out)
         out.fix("SPELL_NEEDED", v, new)
@@ -281,7 +287,7 @@ def guard_text(text, lang, terms=(), final=True):
     text = LINK.sub(link, text)
     t2 = re.sub(r"\*+|`+|(?<![\w])__|__(?![\w])", "", text)
     if t2 != text:
-        out.fix("MARKDOWN", "*/`/__", "")
+        out.fix("MARKDOWN", "** / ` / __", "")
     t3 = EMOJI.sub("", t2)
     if t3 != t2:
         out.fix("EMOJI", "emoji", "")

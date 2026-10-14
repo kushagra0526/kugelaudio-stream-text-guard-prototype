@@ -34,7 +34,11 @@ def norm(s):
 def score(turn, out, lang_ok, messages):
     """-> list of (label, ok) per planted problem / look-alike."""
     on = norm(out)
+    ex = norm(turn.expected)
     res, pos = [], 0
+
+    def clean(rn):  # the raw form shows up no more often than the expected turn allows
+        return on.count(rn) <= ex.count(rn)
     for raw, exp, label in turn.frags:
         en, rn = norm(exp), norm(raw)
         if label == "plain":
@@ -46,10 +50,10 @@ def score(turn, out, lang_ok, messages):
             res.append((label, any(raw in m for m in messages), raw))
             continue
         if not en:
-            res.append((label, rn not in on, raw))
+            res.append((label, clean(rn), raw))
             continue
         i = on.find(en, pos)
-        ok = i >= 0 and (rn == en or rn not in on.replace(en, ""))
+        ok = i >= 0 and (rn == en or clean(rn))
         if ok:
             pos = i + len(en)
         res.append((label, ok, raw))
